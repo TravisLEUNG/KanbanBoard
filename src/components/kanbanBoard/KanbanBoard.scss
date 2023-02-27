@@ -1,0 +1,44 @@
+.board {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    .column {
+        width: 30%;
+        height: 80vh;
+        background-color: #eeeeee;
+        color: #000000;
+        border-radius: 2rem;
+        padding: 2rem 1rem;
+        h3 {
+            margin: 0;
+        }
+        .task-list {
+            max-height: 90%;
+            margin-top: 2rem;
+            text-align: start;
+
+            overflow-y: auto;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            & {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+            .task {
+                padding: 1.5rem 1rem;
+                border: 1px dotted #343434;
+                border-radius: 1rem;
+                h4 {
+                    margin: 0;
+                    margin-bottom: 0.5rem;
+                }
+                p {
+                    margin: 0;
+                    color: #343434;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
